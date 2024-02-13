@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/tulisangojekk.png"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="7dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/tulisangojekk" />
+
+    <ImageView
+        android:id="@+id/language"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-24dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/language"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <ImageView
+        android:id="@+id/imggojek.png"
+        app:layout_constraintTop_toBottomOf="@id/tulisangojekk.png"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/imggojekk"/>
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imggojek.png"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Welcome To Gojek!"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtP1"
+        app:layout_constraintTop_toBottomOf="@id/txtWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="5dp"
+        android:text="Your go-to app for a hassle-free life, We're here to\nhelp with all your needs anytime, anywhere."
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:singleLine="false"
+        android:ellipsize="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingHorizontal="170dp"
+        android:layout_marginBottom="130dp"
+        android:text="Log in"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="@drawable/square"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:paddingHorizontal="116dp"
+        android:text="I'm new, sign me up"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:background="@drawable/signup"
+        android:textColor="@color/green"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/txtterms"
+        app:layout_constraintTop_toBottomOf="@id/btnSignUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="By logging in or registering, you agree to our"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:text="Terms of service"
+            android:textColor="@color/green"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTermOfService3"
+        app:layout_constraintTop_toBottomOf="@id/txtterms"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="15dp"
+        android:text="and"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtTermOfService4"
+        app:layout_constraintTop_toBottomOf="@id/txtterms"
+        app:layout_constraintStart_toEndOf="@id/txtTermOfService3"
+        android:layout_marginStart="3dp"
+        android:text="Privacy Policy."
+        android:textColor="@color/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

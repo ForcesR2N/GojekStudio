@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GojekStudio</string>
+
+    <string-array name="option">
+        <item>Addition</item>
+        <item>Subtraction</item>
+        <item>Multiplication</item>
+        <item>Divide</item>
+    </string-array>
+
+</resources>
