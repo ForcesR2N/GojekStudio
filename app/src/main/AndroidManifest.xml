@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -12,15 +11,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GojekStudio"
         tools:targetApi="31">
+
+        <!-- First Activity -->
+        <activity
+            android:name=".Item"
+            android:exported="false" />
+
+        <!-- Meta-data -->
+        <meta-data
+            android:name="com.google.android.actions"
+            android:value="some_value" />
+
+        <!-- Second Activity -->
         <activity
             android:name=".kalkulator"
             android:exported="true" />
+
+        <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
